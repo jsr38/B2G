@@ -90,8 +90,8 @@ case "$1" in
 	repo_sync $1
 	;;
 
-"ti-am335x-sk")
-	echo DEVICE=ti-am335x-sk >> .tmp-config &&
+"am335xevm")
+	echo DEVICE=am335xevm >> .tmp-config &&
 	repo_sync $1
 	;;
 
@@ -123,7 +123,7 @@ case "$1" in
 	echo - hamachi
 	echo - tara
 	echo - pandaboard
-	echo - ti-am335x-sk
+	echo - am335xevm
 	echo - emulator
 	echo - emulator-x86
 	exit -1
